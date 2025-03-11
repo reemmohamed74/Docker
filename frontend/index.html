@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <h1>EduLearn</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="#" class="btn btn-secondary">Log In</a>
+        <a href="#" class="btn btn-primary">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Learn from expert instructors</h1>
+          <p>Gain the skills you need to succeed in today's digital world</p>
+          <a href="#courses" class="btn btn-primary">Explore Courses</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/hero-illustration.svg" alt="Students learning online">
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stat-card">
+          <h3>Active Students</h3>
+          <p id="active-students-count">15,468</p>
+        </div>
+        <div class="stat-card">
+          <h3>Expert Instructors</h3>
+          <p id="expert-instructors-count">1,200</p>
+        </div>
+        <div class="stat-card">
+          <h3>Available Courses</h3>
+          <p id="available-courses-count">10,000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Available Courses Section -->
+    <section id="courses" class="courses-section">
+      <div class="container">
+        <h2>Available Courses</h2>
+        <div class="categories">
+          <button class="category-button active" data-category="all">All</button>
+          <button class="category-button" data-category="Programming">Programming</button>
+          <button class="category-button" data-category="Web Development">Web Development</button>
+          <button class="category-button" data-category="Digital Marketing">Digital Marketing</button>
+          <button class="category-button" data-category="UI/UX Design">UI/UX Design</button>
+        </div>
+        <div class="courses-container">
+          <!-- Course cards will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Categories Section -->
+    <section class="categories-section">
+      <div class="container">
+        <h2>Top Categories</h2>
+        <div class="category-cards">
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Programming</h3>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Web Development</h3>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+          </div>
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Data Science</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="instructors-section">
+      <div class="container">
+        <h2>Our Expert Instructors</h2>
+        <div class="instructors-container">
+          <!-- Instructor cards will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-cards">
+          <div class="cta-card">
+            <h3>About Us</h3>
+            <p>Learn more about our mission to provide quality education for everyone around the world.</p>
+            <a href="#" class="btn btn-secondary">Read More</a>
+          </div>
+          
+          <div class="cta-card">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="cta-card">
+            <h3>Web Development</h3>
+            <p>Explore our comprehensive web development courses and start building modern websites.</p>
+            <a href="#" class="btn btn-secondary">Explore</a>
+          </div>
+          
+          <div class="cta-card">
+            <h3>Join Our Community</h3>
+            <p>Connect with other students and instructors to enhance your learning experience.</p>
+            <a href="#" class="btn btn-secondary">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>EduLearn</h2>
+          <p>Quality education for everyone</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#instructors">Instructors</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
